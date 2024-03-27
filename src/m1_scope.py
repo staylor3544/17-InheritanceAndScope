@@ -1,5 +1,5 @@
 ###############################################################################
-# TODO: 1. (9 pts)
+# DONE: 1. (9 pts)
 #
 #   For this _todo_, reference the code below.
 #
@@ -65,36 +65,36 @@ def main():
 
 main()
 
-###############################################################################
-# 
+################################################################################
 #   Location 1          Location 2          Location 3
-#   a                   a                   a               
-#   m                   m                   m               
-#   self.a              self.a              self.a          
-#   self.m              self.m              self.m          
-#   t1.a                t1.a                t1.a            
-#   t1.m                t1.m                t1.m            
-#   t2.a                t2.a                t2.a            
-#   t2.m                t2.m                t2.m            
-#
+#   a = 20              a = 20              a = 20
+#   m = X               m = X               m = X
+#   self.a = X          self.a = 5          self.a = X
+#   self.m = X          self.m = 8          self.m = X
+#   t1.a = X            t1.a = X            t1.a = X
+#   t1.m = X            t1.m = X            t1.m = X
+#   t2.a = X            t2.a = X            t2.a = X
+#   t2.m = X            t2.m = X            t2.m = X
+
 #   Location 4          Location 5          Location 6
-#   a                   a                   a               
-#   m                   m                   m               
-#   self.a              self.a              self.a          
-#   self.m              self.m              self.m          
-#   t1.a                t1.a                t1.a            
-#   t1.m                t1.m                t1.m            
-#   t2.a                t2.a                t2.a            
-#   t2.m                t2.m                t2.m            
-#
+#   a = 34              a = 34              a = 20
+#   m = 25              m = 25              m = X
+#   self.a = X          self.a = 5          self.a = X
+#   self.m = X          self.m = 8          self.m = X
+#   t1.a = X            t1.a = 5           t1.a = X
+#   t1.m = X            t1.m = 16          t1.m = X
+#   t2.a = X            t2.a = 5           t2.a = X
+#   t2.m = X            t2.m = 8           t2.m = X
+
 #   Location 7          Location 8          Location 9
-#   a                   a                   a               
-#   m                   m                   m               
-#   self.a              self.a              self.a          
-#   self.m              self.m              self.m          
-#   t1.a                t1.a                t1.a            
-#   t1.m                t1.m                t1.m            
-#   t2.a                t2.a                t2.a            
-#   t2.m                t2.m                t2.m            
-#
+#   a = 21              a = 20              a = 35
+#   m = 3               m = X               m = 3
+#   self.a = X          self.a = X          self.a = 5
+#   self.m = X          self.m = X          self.m = 8
+#   t1.a = X            t1.a = X            t1.a = 5
+#   t1.m = X            t1.m = X            t1.m = 16
+#   t2.a = X            t2.a = X            t2.a = 5
+#   t2.m = X            t2.m = X            t2.m = 8
+
 ###############################################################################
+# 8, 3, 4, 1, 2, 5, 6, 7, 9  (l and 2 seen twice only record first time)

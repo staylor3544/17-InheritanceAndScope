@@ -1,5 +1,5 @@
 ###############################################################################
-# TODO: 1. (4 pts)
+# DONE: 1. (4 pts)
 #
 #   For this module, we are going to build off our Pet class that we created in
 #   m2 of the session 16 coding exercises.
@@ -26,9 +26,28 @@
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
+class Pet():
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
 
+    def __str__(self):
+        return f"{self.name}, Age:{self.age}"
+    
+    def speak(self):
+        print(f"{self.name}: I am your pet. Yes, I can speak. Don't worry, I definitely don't record your shower songs...")
+
+class Dog(Pet):
+    def __init__(self, name, age):
+        super().__init__(name, age)
+
+    def fetch(self):
+        print(f"{self.name} ran to get the stick!")
+
+    def speak(self):
+        print(f"{self.name}: Bark! Bark! Bark!")
 ###############################################################################
-# TODO: 2. (4 pts)
+# DONE: 2. (4 pts)
 #
 #   Now, write your own class of whatever type of pet you wish.
 #
@@ -46,7 +65,17 @@
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
+class Horse(Pet):
+    def __init__(self, name, age, diet, color):
+        super().__init__(name, age)
+        self.diet = diet
+        self.color = color
 
+    def feeding(self):
+        print(f"{self.name} needs to be fed {self.diet} twice a day!")   
+
+    def fav_color(self):
+        print(f"{self.name} looks and feels his best in {self.color}, so make sure his booties are {self.color}!")
 ###############################################################################
 # TODO: 3. (4 pts)
 #
@@ -71,4 +100,15 @@
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
+def main():
+    pup = Dog("George", 3)
+    pony = Horse("Warrior", 4, "alfalfa", "Maroon")
+    print(pup)
+    print(pony)
+    pup.speak()
+    pup.fetch()
+    pony.speak()
+    pony.feeding()
+    pony.fav_color()
 
+main()
